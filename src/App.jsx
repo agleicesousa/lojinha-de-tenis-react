@@ -1,9 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Store from './Pages/Store'
+
 
 function App() {
   return (
-    
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Store />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
